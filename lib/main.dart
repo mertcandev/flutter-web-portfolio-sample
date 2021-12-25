@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'dart:html' as html;
 
 void main() {
   runApp(const MyApp());
@@ -55,7 +56,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
             height: 30,
           ),
           const SizedBox(
-              width: 100,
+              width: 120,
               child: Divider(
                 height: 1,
                 color: Colors.white24,
@@ -84,7 +85,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
                   fontWeight: FontWeight.w300)),
           const SizedBox(height: 30),
           const SizedBox(
-              width: 100,
+              width: 80,
               child: Divider(
                 height: 1,
                 color: Colors.white24,
@@ -106,21 +107,28 @@ class _AnaSayfaState extends State<AnaSayfa> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  html.window.open("https://github.com/mertcandev", "GitHub");
+                },
                 child: SizedBox(
                     height: 35,
                     child: Image.asset("assets/github_logo_black.png")),
               ),
               const SizedBox(height: 15),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  html.window.open(
+                      "https://www.linkedin.com/in/mertcandev", "LinkedIn");
+                },
                 child: SizedBox(
                     height: 40,
                     child: Image.asset("assets/linkedin_logo1.png")),
               ),
               const SizedBox(height: 20),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  html.window.open("https://twitter.com/mertcandev", "Twitter");
+                },
                 child: SizedBox(
                     height: 40, child: Image.asset("assets/twitter_logo.png")),
               ),
