@@ -43,7 +43,8 @@ class _AnaSayfaState extends State<AnaSayfa> {
               //colors: [Color(0xff373B44), Color(0xff4286f4)],
               //colors: [Color(0xfffc4a1a), Color(0xfff7b733)],
               //colors: [Color(0xff1c92d2), Color(0xfff2fcfe)],
-              colors: [Color(0xff67B26F), Color(0xff4ca2cd)]),
+              //colors: [Color(0xff67B26F), Color(0xff4ca2cd)],
+              colors: [Color(0xffffffff), Color(0xffffffff)]),
         ),
         child: Center(
           child: SingleChildScrollView(
