@@ -12,6 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      color: Colors.white,
+      title: "About Me",
       debugShowCheckedModeBanner: false,
       home: AnaSayfa(),
     );
@@ -80,11 +82,23 @@ class _AnaSayfaState extends State<AnaSayfa> {
                 const SizedBox(
                   height: 10,
                 ),
-                Text("Self-taught Flutter Developer based in Antalya, Turkey.",
-                    style: GoogleFonts.exo2(
-                        fontSize: 16,
-                        color: Colors.black,
-                        fontWeight: FontWeight.w400)),
+                Text(
+                  "Self-taught Flutter Developer",
+                  style: GoogleFonts.exo2(
+                      fontSize: 16,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w400),
+                  softWrap: true,
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  "Based in Antalya, Turkey",
+                  style: GoogleFonts.exo2(
+                      fontSize: 16,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w400),
+                  softWrap: true,
+                ),
                 const SizedBox(height: 10),
                 Text("#flutterdev",
                     style: GoogleFonts.exo2(
